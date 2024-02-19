@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title> Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5cb1f7e78b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Kaushal_logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                <div class = "counter">
+                    <a href="https://www.hitwebcounter.com" target="_blank">
+                        <img src="https://hitwebcounter.com/counter/counter.php?page=11461785&style=0010&nbdigits=5&type=page&initCount=0" 
+                        title="Counter Widget" Alt="Visit counter For Websites"   border="0" /></a>          
+                </div> 
+            </nav>
+            <div class="header-text">
+                <p>FPGA Engineer</p>
+                <h1>Hi, I'm <span>Kaushal</span><br>FPGA Design and<br>Verification Engineer</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------About-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Kaushal3.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm an FPGA Engineer with a strong background in hardware development and verification. 
+                        I've had the privilege of working with Vicharak Computers LLP and GalaxEye Space LTD, 
+                        where I contributed to the development of Single Board Computers and data acquisition architectures for CMOS Sensors.
+                        <br>I have a deep understanding of Hardware Description Languages, particularly Verilog HDL, 
+                        and am proficient in using developer tools such as Xilinx Vivado, Vitis IDE, and Multisim.
+                        <br>In addition to my technical skills, I bring a passion for problem-solving and a commitment to continuous learning. 
+                        I'm always looking for opportunities to apply my skills in new ways and to take on challenging projects 
+                        in the field of FPGA development.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                        <p class="tab-links" onclick="opentab('AreaOfInterest')">Area of Interest</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2021 - Current</span><br>Masters in Electronics from NIT Warangal</li>
+                            <li><span>2018 - 2021</span><br>Bachelor's of Science from PDUS University, Sikar</li>
+                            <li><span>2017 - 2018</span><br> High School from BSER, Rajasthan</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>NPTEL, Nov'23</span><br> VLSI (RTL to GDS)</li>
+                            <li><span>Udemy, Oct'23</span><br> Computer Organization & Architecture</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="AreaOfInterest">
+                        <ul>
+                            <li>SoC Designer</li>
+                            <li>ASIC Design Engineer</li>
+                            <li>Hardware Developer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------experiences--------------- -->
+    <div id="experiences">
+        <div class="container">
+            <h1 class="sub-title">My Experiences</h1>
+            <div class="experiences-list">
+                <div>
+                    <i class="fa-solid fa-computer"></i>
+                    <h2>FPGA Developer</h2>
+                    <p>at Vicharak Computers LLP. Working on reconfigurable hardware development for SBC.</p>
+                    <!-- <a href="#">Learn more</a>  -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-satellite"></i>
+                    <h2>FPGA Intern</h2>
+                    <p>at GalaxEye Space LTD. Worked on Data acquisition architectures for CMOS sensor.</p>
+                    <!-- <a href="#">Learn more</a>  -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-users"></i>
+                    <h2>Class Representative</h2>
+                    <p>for M.Sc. Tech (Electronics) NIT Warangal.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-google-scholar"></i>
+                    <h2>DST INSPIRE Scholar</h2>
+                    <p>Got scholarship from DST for Higher Education.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <!-- -------------skills--------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <h2>Languages</h2>
+                    <p>C,  C++,<br>
+                        MATLAB,<br>
+                        Verilog,<br>
+                        SystemVerilog</p>
+                    <!-- <a href="#">Learn more</a>  -->
+                </div>
+                <div>
+                    <h2>Developer Tools</h2>
+                    <p>Xilinx Vivado-Vitis,<br>
+                        VS Code,<br>
+                        Multisim, MATLAB,<br>
+                        Keil uVision,<br>
+                        Efinix Efinity Software,<br>
+                        iVerilog, GTKWave.</p>
+                    <!-- <a href="#">Learn more</a>  -->
+                </div>
+                <div>
+                    <h2>Hands-on</h2>
+                    <p>Zynq 7000 SoC,<br>
+                        FPGA Artix-7,<br>
+                        8051 and ARM-7 Microcontroller,<br>
+                        8086 Microprocessor,<br>
+                        Arduino UNO R3,<br>
+                        Trion T120 FPGA.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <h2>Soft Skills</h2>
+                    <p>Time Management,<br>
+                        Quick-learner,<br>
+                        Problem-solving,<br>
+                        Logical Thinking,<br>
+                        Teamwork,<br>
+                        Documentation.</p>
+                    <!-- <a href="#">Learn more</a>  -->
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <!-- ------------projects------------ -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/FIFO_UART.jpg">
+                    <div class="layer">
+                        <h3>FIFO & UART Implementation</h3>
+                        <p>Implemented the project on Trion T120 FPGA, connected with PC using serial terminal.</p>
+                        <a href="https://github.com/Mr-Kaushal-22/Synq_FIFO_UART_Hardware.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Face_recognizition.jpg">
+                    <div class="layer">
+                        <h3>Face Recognition using CNN</h3>
+                        <p>Implimented the project on MATLAB using Computer Vision and Deep Learning Toolbox.</p>
+                        <a href="https://github.com/Mr-Kaushal-22/Face_Recognition.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/CMOS_Data_acq.jpg">
+                    <div class="layer">
+                        <h3>Data Acquisition for CMOS Sensor</h3>
+                        <p>Simulated the data acquisition prototype architecture on Xilinx Vivado.</p>
+                        <a href="https://github.com/Mr-Kaushal-22/LVDS_Data_Acquisition.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Microcontroller_FPGA.jpg">
+                    <div class="layer">
+                        <h3>Microcontroller using Verilog</h3>
+                        <p>Designed and Simulated the microcontroller on Xilinx Vivado.</p>
+                        <a href="https://github.com/Mr-Kaushal-22/Microcontroller_Verilog_Code.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Mr-Kaushal-22/" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -----------------contact------------------ -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sun-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kaushalkumawat1723@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9785957242</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.instagram.com/mr._kaushal_22?igsh=MW5jNGlkdGR5bmw4dA=="><i class="fa-brands fa-instagram"></i></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-twitter-square"></i></a> -->
+                        <a href="https://www.linkedin.com/in/mrkaushal22/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Mr-Kaushal-22/" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="mailto:kaushalkumawat1723@gmail.com" target="_blank" class="link"><i class="fa fa-envelope"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/drive/folders/11gZ_Y48Ykjtd_0SJ91s5RrKmk0pX6Qok?usp=drive_link" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright Kevin. Made with <i class="fa-solid fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.classList.add("show_menu");
+            sidemeu.classList.remove("hide_menu");
+        }
+        function closemenu(){
+            sidemeu.classList.add("hide_menu");
+            sidemeu.classList.remove("show_menu");
+        }    
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzBwqGqiZvDrcRfKyb5Pxm3omxLtL1vamPRd7Sx5eN5FGrpMNzOk3vQs-Ij7sVc2v6zTA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>
