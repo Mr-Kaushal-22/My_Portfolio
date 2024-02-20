@@ -409,7 +409,7 @@ form btn2{
     cursor: pointer;
 }
 
-.copyright{
+.VoteOfThanks{
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -418,7 +418,7 @@ form btn2{
     margin-top: 20px;
 }
 
-.copyright i{
+.VoteOfThanks i{
     color: #ff004f;
 }
 
